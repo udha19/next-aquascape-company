@@ -12,7 +12,7 @@ import {
 
 export default function ProductItem(product: any) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [openContent, SetOpenContent] = useState({});
+  const [openContent, SetOpenContent] = useState({} as any);
 
   const handleOpen = (product: any) => {
     onOpen();
