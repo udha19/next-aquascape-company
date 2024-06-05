@@ -56,11 +56,11 @@ export default function Profile() {
     <>
       <div className="flex min-h-1/2 flex-row items-center justify-between p-20 bg-hero">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <div className="m-2 shadow-2xl bg-teal-200 bg-opacity-30 rounded-full py-8">
+          <div className="m-2 shadow-2xl bg-teal-200/30 backdrop-blur-sm rounded-full py-8">
             <p className="text-center text-2xl ">Your Aquascaping </p>
             <p className="text-center text-3xl ">Solutions </p>
           </div>
-          <div className="bg-teal-200 bg-opacity-30 rounded-xl p-10 shadow-xl lg:w-3/4">
+          <div className="bg-teal-200/30 backdrop-blur-sm rounded-xl p-10 shadow-xl lg:w-3/4">
             <b className="text-xl">Our Description</b>
             <Accordion>
               {description.map((desc, index) => {

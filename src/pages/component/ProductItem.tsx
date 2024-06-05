@@ -22,7 +22,7 @@ export default function ProductItem(product: any) {
   return (
     <>
       <div
-        className="rounded-xl m-2 bg-slate-[#29b6f6] shadow-xl"
+        className="rounded-xl m-2 bg-[#29b6f6] shadow-xl"
         onClick={() => handleOpen(product?.product)}
       >
         <Image
@@ -36,16 +36,21 @@ export default function ProductItem(product: any) {
           width={270}
         />
         <p className="font-bold text-large text-center mx-auto p-2 overflow-hidden text-ellipsis truncate">
+          {product?.product?.id}.
           {product?.product?.name ? product?.product?.name : "Our Product"}
         </p>
       </div>
-      <Modal size="md" isOpen={isOpen} onClose={onClose}>
+      <Modal
+        size="md"
+        isOpen={isOpen}
+        onClose={onClose}
+        backdrop="blur"
+        className="bg-[#29b6f6]"
+      >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
-                {openContent?.name}
-              </ModalHeader>
+              <ModalHeader className="flex flex-col gap-1"></ModalHeader>
               <ModalBody>
                 <Image
                   alt="Card background"
@@ -57,8 +62,15 @@ export default function ProductItem(product: any) {
                   }
                 />
               </ModalBody>
+              <p className="font-bold text-center">{openContent?.name}</p>
+
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button
+                  className="sm:visible lg:hidden"
+                  color="danger"
+                  variant="solid"
+                  onPress={onClose}
+                >
                   Close
                 </Button>
               </ModalFooter>

@@ -5,8 +5,8 @@ import { NextUIProvider } from "@nextui-org/react";
 export default function Home() {
   return (
     <NextUIProvider>
-      <main className="flex min-h-screen flex-row items-center justify-between">
-        <div className=" w-full items-center justify-between font-mono text-sm">
+      <main className="flex min-h-screen flex-row items-center justify-between font-quicksand">
+        <div className=" w-full items-center justify-between text-sm">
           <Profile />
           <ProductsLists />
           <div className="bubbles">
