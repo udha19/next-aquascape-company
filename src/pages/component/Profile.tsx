@@ -55,9 +55,9 @@ export default function Profile() {
   return (
     <>
       <div className="flex min-h-1/2 flex-row items-center justify-between p-20 bg-hero">
-        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <div className="m-2 shadow-2xl bg-teal-200/30 backdrop-blur-sm rounded-full py-8">
-            <p className="text-center text-2xl ">Your Aquascaping </p>
+        <div className="z-10 max-w-5xl w-full mx-auto items-center justify-between font-mono text-sm lg:flex">
+          <div className="m-2 shadow-2xl bg-teal-200/30 backdrop-blur-sm rounded-full p-8">
+            <p className="text-center text-2xl whitespace-nowrap">Your Aquascaping </p>
             <p className="text-center text-3xl ">Solutions </p>
           </div>
           <div className="bg-teal-200/30 backdrop-blur-sm rounded-xl p-10 shadow-xl lg:w-3/4">
